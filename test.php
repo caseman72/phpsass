@@ -3,9 +3,7 @@
     <title>PHamlP Test Suite</title>
     <link rel="stylesheet" type="text/css" href="test.css">
   </head>
-  <body>
-    <?php
-
+  <body><?php
     /**
      * This file is horrible and not Drupal at all. Forgive me, I did not have time to write concise code.
      */
@@ -26,7 +24,7 @@
      *  Testing is eased by stripping out all whitespace, which may
      *  introduce bugs of their own.
      */
-    include 'SassParser.php';
+    include './lib/SassParser.php';
 
     $test_dir = './tests';
 
@@ -190,6 +188,7 @@
       asort($return['by_type']);
       return $return;
     }
-    ?>
+?>
+
   </body>
 </html>
