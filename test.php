@@ -69,10 +69,10 @@
                 break;
               }
             }
-            print "\n\n" . $names[0] . "\n";
+            print "\n\n{$names[0]}\n";
             print strlen($out) . ' ' . $out;
             print "\n\n";
-            print "\n\n" . $names[1] . "\n";
+            print "\n\n{$names[1]}\n";
             print strlen($two) . ' ' . $two;
           }
           die;
@@ -183,6 +183,7 @@
           }
           $return['by_name'][$name][] = $name . '.' . $ext;
         }
+        closedir($op);
       }
       asort($return['by_name']);
       asort($return['by_type']);
